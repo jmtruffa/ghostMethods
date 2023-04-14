@@ -7,8 +7,8 @@ getJWT = function(integration = "admin") {
   envVar = Sys.getenv(env)
 
   # split the secret into two parts
-  secret = strsplit(envVar, ":")[[1]][1]
-  kid = strsplit(envVar, ":")[[1]][2]
+  secret = strsplit(envVar, ":")[[1]][2]
+  kid = strsplit(envVar, ":")[[1]][1]
   
   # create a JWT with the secret and kid  
   jwt = jose::jwt_encode_hmac(

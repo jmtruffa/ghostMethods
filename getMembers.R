@@ -22,14 +22,14 @@
 #' - status     Acá todos dirán free. Pero lo dejo para un futuro.
 #' 
 #' @examples reqGhostMembersPaged(15) -> Devuelve la página 15
-getMembers = function(requestPage = 0) {
+getMembers = function(requestPage = 0, integration = "admin") {
   
   require(tidyverse)
   require(jsonlite)
   require(httr2)
   require(ghostMethods)
   
-  jwt = getJWT()
+  jwt = getJWT(integration)
 
   url = paste0("https://mercados-para-todos.ghost.io/ghost/api/admin/members/")
   r = request(url) %>%
