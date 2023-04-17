@@ -1,0 +1,11 @@
+Package: ghostMethods
+Type: Package
+Title: Provee integración con API de Ghost.org
+Version: 0.1.0
+Author: Juan Manuel Truffa
+Maintainer: Juan Manuel Truffa <jmtruffa@gmail.com>
+Description: Implementa métodos CRUD para miembros en una implementación en Ghost.org
+License: Free use
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
